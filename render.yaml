@@ -6,6 +6,6 @@ services:
     startCommand: python anbot.py
     envVars:
       - key: BOT_TOKEN
-        value: 7004135727:AAG0SHRKPFtoKfFU2cWd1rxjXWmkfat6sGE
+        value: your_bot_token_here
       - key: YOUR_USERNAME
         value: "@canxuanquang"
