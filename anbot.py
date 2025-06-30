@@ -2,8 +2,8 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-YOUR_USERNAME = os.environ.get("YOUR_USERNAME")
+BOT_TOKEN = os.environ.get("7004135727:AAG0SHRKPFtoKfFU2cWd1rxjXWmkfat6sGE")
+YOUR_USERNAME = os.environ.get("canxuanquang")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message = update.message
@@ -12,8 +12,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = message.text.lower()
 
-    if YOUR_USERNAME.lower() in text and "rủ đi ăn" in text:
-        await message.reply_text("QuangCx không rượu bia")
+    if YOUR_USERNAME.lower() in text and "ăn" in text:
+        await message.reply_text("Xin đừng mời chủ nhân của tôi đi NHẬU nữa !!!!!!!")
 
 if __name__ == '__main__':
     app = ApplicationBuilder().token(BOT_TOKEN).build()
